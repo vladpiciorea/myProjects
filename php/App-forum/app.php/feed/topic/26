@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-gb">
+	<link rel="self" type="application/atom+xml" href="http://www.planetstyles.net/demo/h2o/3.2/3/app.php/feed/topic/26" />
+
+	<title>PlanetStyles Test Forum</title>
+	<subtitle>Premium Style Demo by PlanetStyles.net</subtitle>
+	<link href="http://www.planetstyles.net/demo/h2o/3.2/3/index.php" />
+	<updated>2016-12-11T00:14:31</updated>
+
+	<author><name><![CDATA[PlanetStyles Test Forum]]></name></author>
+	<id>http://www.planetstyles.net/demo/h2o/3.2/3/app.php/feed/topic/26</id>
+
+		<entry>
+		<author><name><![CDATA[PlanetStyles]]></name></author>
+		<updated>2016-12-11T00:14:31</updated>
+
+		<published>2016-12-11T00:14:31</published>
+		<id>http://www.planetstyles.net/demo/h2o/3.2/3/viewtopic.php?t=26&amp;p=40#p40</id>
+		<link href="http://www.planetstyles.net/demo/h2o/3.2/3/viewtopic.php?t=26&amp;p=40#p40"/>
+		<title type="html"><![CDATA[Emoji Example]]></title>
+
+		
+		<content type="html" xml:base="http://www.planetstyles.net/demo/h2o/3.2/3/viewtopic.php?t=26&amp;p=40#p40"><![CDATA[
+<img alt="👋" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f44b.svg"><img alt="😂" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f602.svg"><img alt="👌" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f44c.svg"><img alt="🤗" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f917.svg"><img alt="😋" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f60b.svg"><img alt="🙂" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f642.svg"><img alt="☝️" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/261d.svg">️<img alt="👝" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f45d.svg"><img alt="🐯" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f42f.svg"><img alt="🐧" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f427.svg"><img alt="🐝" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f41d.svg"><img alt="🌟" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f31f.svg"><img alt="🍔" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f354.svg"><img alt="🍉" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f349.svg"><img alt="🎱" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f3b1.svg"><img alt="🎾" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f3be.svg"><img alt="🛀🏻" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f6c0-1f3fb.svg"><img alt="🎮" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f3ae.svg"><img alt="✈️" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/2708.svg">🏞<img alt="🌠" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f320.svg"><img alt="📸" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f4f8.svg"><img alt="🔫" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f52b.svg"><img alt="⚗️" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/2697.svg"><img alt="📘" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f4d8.svg"><img alt="📎" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f4ce.svg"><img alt="🇬🇧" class="emoji smilies" draggable="false" src="//cdn.jsdelivr.net/emojione/assets/svg/1f1ec-1f1e7.svg"><p>Statistics: Posted by <a href="http://www.planetstyles.net/demo/h2o/3.2/3/memberlist.php?mode=viewprofile&amp;u=2">PlanetStyles</a> — Sun Dec 11, 2016 12:14 am</p><hr />
+]]></content>
+	</entry>
+	</feed>

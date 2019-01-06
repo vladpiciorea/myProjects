@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-gb">
+	<link rel="self" type="application/atom+xml" href="http://www.planetstyles.net/demo/h2o/3.2/3/app.php/feed/topic/21" />
+
+	<title>PlanetStyles Test Forum</title>
+	<subtitle>Premium Style Demo by PlanetStyles.net</subtitle>
+	<link href="http://www.planetstyles.net/demo/h2o/3.2/3/index.php" />
+	<updated>2016-10-09T18:45:41</updated>
+
+	<author><name><![CDATA[PlanetStyles Test Forum]]></name></author>
+	<id>http://www.planetstyles.net/demo/h2o/3.2/3/app.php/feed/topic/21</id>
+
+		<entry>
+		<author><name><![CDATA[PlanetStyles]]></name></author>
+		<updated>2016-10-09T18:45:41</updated>
+
+		<published>2016-10-09T18:45:41</published>
+		<id>http://www.planetstyles.net/demo/h2o/3.2/3/viewtopic.php?t=21&amp;p=21#p21</id>
+		<link href="http://www.planetstyles.net/demo/h2o/3.2/3/viewtopic.php?t=21&amp;p=21#p21"/>
+		<title type="html"><![CDATA[Attachments]]></title>
+
+		
+		<content type="html" xml:base="http://www.planetstyles.net/demo/h2o/3.2/3/viewtopic.php?t=21&amp;p=21#p21"><![CDATA[
+This topic has 4 attachments:<br><ul><li>Inline attachment (normal size)</li><li>Inline attachment (oversized)</li><li>Fixed attachment (normal size)</li><li>Fixed attachment (oversized)</li></ul>Inline attachment, normal size:<div class="inline-attachment"><dl class="file"><dt class="attach-image"><img src="./../../.http://www.planetstyles.net/demo/h2o/3.2/3/download/file.php?id=2" class="postimage" alt="16.-Black-and-White-line.jpg" onclick="viewableArea(this);" /></dt></dl></div>Inline attachment, oversize:<div class="inline-attachment"><dl class="file"><dt class="attach-image"><img src="./../../.http://www.planetstyles.net/demo/h2o/3.2/3/download/file.php?id=3" class="postimage" alt="avatar1.png" onclick="viewableArea(this);" /></dt></dl></div>Followed by the other two attached.<dl class="file"><dt class="attach-image"><img src="./../../.http://www.planetstyles.net/demo/h2o/3.2/3/download/file.php?id=4" class="postimage" alt="avatar8.png" onclick="viewableArea(this);" /></dt></dl><br /><dl class="file"><dt class="attach-image"><img src="./../../.http://www.planetstyles.net/demo/h2o/3.2/3/download/file.php?id=5" class="postimage" alt="rail-line-in-glasgow-at-night-with-light-trails-wide-angle-black-and-white.jpg" onclick="viewableArea(this);" /></dt></dl><p>Statistics: Posted by <a href="http://www.planetstyles.net/demo/h2o/3.2/3/memberlist.php?mode=viewprofile&amp;u=2">PlanetStyles</a> — Sun Oct 09, 2016 6:45 pm</p><hr />
+]]></content>
+	</entry>
+	</feed>

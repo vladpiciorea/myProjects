@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+        <div id="output">
+            
+        </div>
+    <script src= "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+ <script>
+      $(function (){
+           // inside of HTML file
+
+            var worker = new Worker('./script/8WebWorker1');
+
+            worker.addEventListener('message', function(e) {
+                if(e.data === 'STARTED') {
+                    // worker has been started
+                    // sample: update the screen to display worker started
+                    $('#output').append('<div>Worker started</div>');
+                } else if(e.data === 'STOPPED') {
+                    // worker has been stopped
+                    // cleanup work (if needed)
+                    // sample: update the screen to display worker stopped
+                    $('#output').append('<div>Worker stopped</div>');
+                } else {
+                    // Normal message. Act upon data as needed
+                    // Sample: display data on screen
+                    $('#output').append('<div>' + e.data + '</div>');
+                }
+            });
+
+            // When you're ready, send the start message
+            worker.postMessage('START');
+
+            // Send data as needed
+            worker.postMessage('sample data');
+
+            // Stop worker when you're done
+            worker.postMessage('STOP');
+      });
+ </script>
+</body>
+</html>

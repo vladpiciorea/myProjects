@@ -1,0 +1,38 @@
+/* Light */
+
+.base2 { /* Cat Headers */
+	background: rgba(255,255,255,0.1);	
+}
+
+.tabs .tab > a {
+	background: rgba(255,255,255,0.05);
+}
+
+.panel, .tabs .activetab > a, .tabs .activetab > a:hover, .navigation .active-subsection a {
+	background: rgba(255,255,255,0.1);
+}
+
+li.row, hr, .signature, .postprofile, .pm .postprofile, .panel-container .panel li.row, fieldset.polls dl  {border-color: rgba(255,255,255,0.1);}
+
+.post {border-color: rgba(255,255,255,0.5);}
+
+
+/* Dark */
+
+/* Main base is dynamically set in overall_header.html via H2O Control Panel */
+
+
+.badge {
+	background: rgba(0,0,0,0.2) !important;
+}
+
+.navbar a:hover {
+	background: rgba(0,0,0,0.1);
+}
+
+/* Other */
+.reported, .rules, p.post-notice, #phpbb_announcement {
+	background: rgba(255,0,0,0.3) !important;	
+}
+
+.forumlist_grid .grid_colour_overlay {background: rgba(0,0,0,0.3);}

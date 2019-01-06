@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    </head>
+<body>
+    <h1>Hello word</h1>
+    <h1 cusstom= "banner" >Fiind by cusstom value</h1>
+    <h1 class= "schim-col" >Fiind by start value</h1>
+    <h1 class= "col-md-5" >Fiind by contein value</h1>
+    <script src= "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            $('h1').text('hello jQuery');
+            $('h1[cusstom^="banner"]').text('a fost schimbat');
+            $('h1[class*="schim"]').text('Incepe cu schim');
+            $('h1[class*="md"]').text('Are valorea md');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+body {
+    background-color: #ffff99;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: Helvetica, Impact, Courier;
+    font-size: 2em;
+   }
+    
+   h1 {
+    border: 5px solid #ff6600;
+    padding-left: 1%;
+   }
+    
+    
+   h2 {
+    background-color: #ff6600;
+    color: white;
+   }
+    
+   ol {
+    background-color: #ffcc00;
+   }
+    
+   li {
+    color: white;
+   }
+    
+   p {
+    border: 5px dotted #ffcc00;
+
+   }

@@ -1,0 +1,38 @@
+/* Color */
+a:hover, .navbar_footer a, .copyright_bar a, .social_links_footer a:hover span, .icon.fa-file.icon-red, a:hover .icon.fa-file.icon-red, .navigation .active-subsection a, .navigation .active-subsection a:hover, .navigation a:hover, .tabs .tab > a:hover, .tabs .activetab > a, .tabs .activetab > a:hover, a.postlink, a.postlink:visited, .navbar_in_header .badge, .button:focus .icon, .button:hover .icon, .button-secondary:focus, .button-secondary:hover, .notification_unread, .top_bar li a:hover, .top_bar li.active a, .forum_id, a:link, a:visited, .forumlist_grid .grid_colour_overlay:hover, .site-description h1   {
+	color: #47c4ff;
+}
+
+/* Background Solid  */
+.pagination li a:hover, .pagination li.active span, .pagination li a:focus, .jumpbox-cat-link, .dropdown-contents > li > a:hover, a.no_avatar:hover, .jumpbox-cat-link:hover, input.button1:focus, input.button2:focus, input.button3:focus, .specialbutton, input.specialbutton, .panel .specialbutton, a.specialbutton, .scrollToTop, a.specialbutton, .dark_base .social_links_footer a:hover span, .topic_type, .badge, .grid_unread, a.navbar_top_search:hover, .navbar, body.content_block_header_stripe li.header:before, .no_avatar, .forumbg-table, .sidebar_block_stripe:before, .fancy_panel:before, a.button1, input.button1, input.button3, a.button2, input.button2, .forabg ul.topiclist li.row:before {
+	background-color: #47c4ff;	
+}
+
+/* Borders Dark */
+.pagination li a:hover, .pagination li.active span, .pagination li a:focus, blockquote, .codebox code, .jumpbox-cat-link, a.postlink, input.button1:focus, input.button2:focus, input.button3:focus, input.specialbutton, .inputbox:hover, .inputbox:focus, .specialbutton, .button:hover, .button:focus, a.specialbutton, .dark_base .social_links_footer a span, .dark_base .social_links_footer a:hover span, .top_bar li a:hover, .top_bar li.active a, a.navbar_top_search {
+	border-color: #47c4ff;
+}
+
+/* Box-Shadow Dark */
+.forumlist_grid .grid_colour_overlay:hover {box-shadow: inset 0px 0px 0px 8px #47c4ff};
+
+
+
+
+
+
+
+/* Colour Hover Light */
+.navbar_footer a:hover, .copyright_bar a:hover, a.postlink:hover, a:hover  {
+	color: #77d3ff;
+}
+
+/* Background Hover Light */
+a.scrollToTop:hover, input.specialbutton:hover, a.specialbutton:hover, a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
+	background-color: #77d3ff;
+}
+
+/* Border light */
+.specialbutton:hover {
+	border-color: #77d3ff;
+}

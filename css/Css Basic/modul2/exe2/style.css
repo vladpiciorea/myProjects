@@ -1,0 +1,30 @@
+body{
+    background-color: #ccffcc;
+    color: #336600;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+ 
+h1{
+    background-color: #336600;
+    color: #ccffcc;
+    text-align: center;
+
+}
+ 
+p {
+    border: 3px black solid;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+ 
+ul {
+    background-color: #ffff99;
+}
+ 
+h1, h2 {
+    text-decoration: underline;
+}

@@ -1,0 +1,576 @@
+0
+00:00:05,875 --> 00:00:10,077
+In the previous lesson, I introduced JavaScript which we're going to use to
+
+1
+00:00:10,077 --> 00:00:12,740
+generate dynamic content within our web pages.
+
+2
+00:00:13,890 --> 00:00:16,780
+Now JavaScripts, like many other programming languages,
+
+3
+00:00:16,780 --> 00:00:21,440
+has things like variables and arrays and objects, loops, conditionals, and
+
+4
+00:00:21,440 --> 00:00:25,010
+functions that we're going to see in the next few lessons.
+
+5
+00:00:25,010 --> 00:00:28,671
+Now I'm going to assume that you've seen some programming language before,
+
+6
+00:00:28,671 --> 00:00:31,500
+maybe Java, Python, C, something like that.
+
+7
+00:00:31,500 --> 00:00:33,330
+But even if you know those languages,
+
+8
+00:00:33,330 --> 00:00:36,150
+there are some important differences with Java Script.
+
+9
+00:00:36,150 --> 00:00:39,940
+In particular, the relationship between functions and objects and how they're
+
+10
+00:00:39,940 --> 00:00:45,250
+defined and then, later, of course, how the JavaScript interacts with the HTML.
+
+11
+00:00:45,250 --> 00:00:50,090
+Let's start with the basics of how we define a variable in JavaScript.
+
+12
+00:00:50,090 --> 00:00:54,810
+In JavaScript, we use the keyword var or var, V-A-R, to indicate that we're
+
+13
+00:00:54,810 --> 00:01:00,540
+declaring a variable, then the name of the variable, optionally, some initial value.
+
+14
+00:01:00,540 --> 00:01:05,260
+Here I've declared a variable called age and I set it equal to 22.
+
+15
+00:01:05,260 --> 00:01:07,870
+I can have a variable hold a string.
+
+16
+00:01:07,870 --> 00:01:10,970
+Here are the string Jane Doe is the name, or
+
+17
+00:01:10,970 --> 00:01:14,450
+it can have a boolean value false for this variable here.
+
+18
+00:01:15,800 --> 00:01:19,280
+Once I've declared a variable, how do I see it's value?
+
+19
+00:01:19,280 --> 00:01:22,790
+Well, if we're doing this in the context of a web browser, a webpage,
+
+20
+00:01:22,790 --> 00:01:25,150
+there are four different ways we can do that.
+
+21
+00:01:25,150 --> 00:01:29,410
+The first way we'll see is if we're using the script element, or the script tag,
+
+22
+00:01:29,410 --> 00:01:35,210
+within the HTML, is to write the variable directly into the webpage.
+
+23
+00:01:35,210 --> 00:01:40,350
+We can do that using document.write, which we saw in the lesson last time.
+
+24
+00:01:40,350 --> 00:01:46,160
+Here we're using the script tag, we declare a variable called age set it equal
+
+25
+00:01:46,160 --> 00:01:48,530
+to 12, and we use document.write.
+
+26
+00:01:48,530 --> 00:01:54,840
+We pass it the variable, and this will print the value 12 within the html page.
+
+27
+00:01:54,840 --> 00:01:58,237
+It's important to note that this approach is somewhat discouraged.
+
+28
+00:01:58,237 --> 00:02:00,851
+We're clearly combining the content and
+
+29
+00:02:00,851 --> 00:02:04,661
+the functionality, the html and the JavaScript together,
+
+30
+00:02:04,661 --> 00:02:09,390
+we'll see better alternatives later in this week in the course.
+
+31
+00:02:09,390 --> 00:02:11,870
+The second way of seeing the variable's value
+
+32
+00:02:11,870 --> 00:02:16,770
+is writing it to the log within the console within the browser.
+
+33
+00:02:16,770 --> 00:02:21,208
+For instance in this case, again I have the script tags,
+
+34
+00:02:21,208 --> 00:02:25,839
+I set a variable called age = 12 and I used console.log.
+
+35
+00:02:25,839 --> 00:02:31,230
+I pass up the variable, and it'll print that value in the log file in the console.
+
+36
+00:02:32,290 --> 00:02:36,570
+In a browser like Chrome, it would look something like this, here's the value 12.
+
+37
+00:02:36,570 --> 00:02:41,450
+A third way is to use the alert function.
+
+38
+00:02:41,450 --> 00:02:44,370
+This will create a pop up with that variable's value
+
+39
+00:02:44,370 --> 00:02:46,110
+at the top of the browser.
+
+40
+00:02:46,110 --> 00:02:50,113
+So again, embedding the JavaScript in the HTML page,
+
+41
+00:02:50,113 --> 00:02:54,820
+creating the variable called age and using the alert function.
+
+42
+00:02:54,820 --> 00:03:00,525
+And at the top of my web browser page I would see this page says 12.
+
+43
+00:03:00,525 --> 00:03:05,710
+Last, I can use what's known as the REPL, that's a read evaluate print loop,
+
+44
+00:03:05,710 --> 00:03:07,780
+which is in the console and
+
+45
+00:03:07,780 --> 00:03:12,000
+I just have to type the name of the variable and it'll print out it's value.
+
+46
+00:03:12,000 --> 00:03:13,990
+Here I have the variable called age once again.
+
+47
+00:03:13,990 --> 00:03:20,690
+And I just type age and then REPL will print out it's value in print out, 12.
+
+48
+00:03:20,690 --> 00:03:24,770
+Now when I first started talking about variables I gave some examples of
+
+49
+00:03:24,770 --> 00:03:25,360
+variables.
+
+50
+00:03:25,360 --> 00:03:29,220
+We had a number, a string and a boolean value but
+
+51
+00:03:29,220 --> 00:03:33,310
+I didn't declare any sort of type, I just said they were variables.
+
+52
+00:03:33,310 --> 00:03:37,900
+That's because in JavaScript, we can change the type of a variable.
+
+53
+00:03:37,900 --> 00:03:42,610
+In this case, we see a variable called id, which is set to 33.2,
+
+54
+00:03:42,610 --> 00:03:44,580
+a floating point number.
+
+55
+00:03:44,580 --> 00:03:48,420
+And then I can change id to the string secret.
+
+56
+00:03:48,420 --> 00:03:53,520
+That is I can change id from a number to a string.
+
+57
+00:03:53,520 --> 00:03:56,800
+In JavaScript there are five primitive types.
+
+58
+00:03:56,800 --> 00:04:01,530
+If I have a variable of one type, I can simply change it to that of another.
+
+59
+00:04:01,530 --> 00:04:03,390
+The first is a number as we've seen.
+
+60
+00:04:03,390 --> 00:04:06,210
+We can have an integer, floating point number.
+
+61
+00:04:06,210 --> 00:04:10,550
+We can also have positive and negative infinity or not a number.
+
+62
+00:04:10,550 --> 00:04:13,200
+We'll see a little bit more of this on the next slide.
+
+63
+00:04:13,200 --> 00:04:17,620
+We can have strings, booleans, which are, of course, true and false.
+
+64
+00:04:17,620 --> 00:04:22,010
+There's a representation of null, meaning it has no value, an empty value.
+
+65
+00:04:22,010 --> 00:04:25,990
+But there's also undefined, which is JavaScript's way of saying,
+
+66
+00:04:25,990 --> 00:04:29,630
+I have not seen this before, I don't have any value for it.
+
+67
+00:04:29,630 --> 00:04:31,450
+Let's look at numbers first.
+
+68
+00:04:31,450 --> 00:04:34,700
+JavaScript numbers, whether they're a floating point number or an integer,
+
+69
+00:04:34,700 --> 00:04:38,530
+are stored internally using floating point notation.
+
+70
+00:04:38,530 --> 00:04:41,830
+As mentioned, there's a positive and negative infinity values,
+
+71
+00:04:41,830 --> 00:04:47,050
+which represent enormously positive and enormously negative numbers.
+
+72
+00:04:47,050 --> 00:04:48,760
+And then, there's not a number, NaN.
+
+73
+00:04:49,980 --> 00:04:54,900
+If, for instance, we can try to convert, say, the string tree to a number,
+
+74
+00:04:54,900 --> 00:04:58,970
+this would return NaN, to indicate that it's not a number.
+
+75
+00:04:58,970 --> 00:05:03,750
+As in many other programming languages, we can use basic arithmetic operations,
+
+76
+00:05:03,750 --> 00:05:09,380
+plus, minus, times, divide, mod on JavaScript numbers.
+
+77
+00:05:09,380 --> 00:05:15,570
+These follow the standard multiply, divide, add, subtract precedence rules.
+
+78
+00:05:15,570 --> 00:05:19,449
+And there's also post-increment, ++ and
+
+79
+00:05:19,449 --> 00:05:25,250
+post-decrement - -, Here on the bottom, we see some examples of using
+
+80
+00:05:25,250 --> 00:05:30,260
+arithmetic operators on number, numeric variables.
+
+81
+00:05:31,330 --> 00:05:37,190
+Here we see post increments minus and then following the order of operations,
+
+82
+00:05:37,190 --> 00:05:40,730
+the precedence rules for doing multiple operations.
+
+83
+00:05:40,730 --> 00:05:45,850
+The second type of variable that we have in JavaScript are strings
+
+84
+00:05:45,850 --> 00:05:50,380
+As in many other programming languages, strings are represented using a series of
+
+85
+00:05:50,380 --> 00:05:55,500
+characters which are under the cover, under the hood, just numbers.
+
+86
+00:05:56,710 --> 00:06:00,810
+In JavaScript you'll often see single quotes around strings.
+
+87
+00:06:00,810 --> 00:06:02,160
+For instance, in this case,
+
+88
+00:06:02,160 --> 00:06:04,740
+'I am a dolphin', just have single quotes around it.
+
+89
+00:06:05,910 --> 00:06:08,720
+However, we used double quotes if the string, itself,
+
+90
+00:06:08,720 --> 00:06:11,810
+contains a single quote, for instance," I'm a dolphin".
+
+91
+00:06:13,410 --> 00:06:16,980
+We can use backslash characters as escape characters,
+
+92
+00:06:16,980 --> 00:06:18,953
+as in many other programming languages.
+
+93
+00:06:18,953 --> 00:06:22,272
+\n for newline, \t for tab,
+
+94
+00:06:22,272 --> 00:06:27,440
+\\ if we want the character backslash to appear in the text.
+
+95
+00:06:28,670 --> 00:06:30,370
+And it's important to note, and
+
+96
+00:06:30,370 --> 00:06:34,060
+we'll keep coming back to this, that JavaScript strings are immutable.
+
+97
+00:06:34,060 --> 00:06:37,640
+We can change its string, but that would just return a new string.
+
+98
+00:06:37,640 --> 00:06:40,750
+But once we set the string, we cannot change it.
+
+99
+00:06:40,750 --> 00:06:45,300
+Some common functions on strings include concatenating or
+
+100
+00:06:45,300 --> 00:06:47,580
+adding two strings together.
+
+101
+00:06:47,580 --> 00:06:51,800
+In the example at the bottom, we see firstName is John, lastName is doe.
+
+102
+00:06:51,800 --> 00:06:55,970
+And I can use the concat function to concatenate
+
+103
+00:06:55,970 --> 00:07:00,489
+the first name with this empty space and then the last name variable.
+
+104
+00:07:01,520 --> 00:07:04,374
+This will produce this string, John doe,
+
+105
+00:07:04,374 --> 00:07:07,637
+which I will store in this variable, fullName.
+
+106
+00:07:07,637 --> 00:07:12,213
+I can also use the string + string notation, which will still do
+
+107
+00:07:12,213 --> 00:07:17,710
+concatenation and now greeting is going to say, HELLO, John doe.
+
+108
+00:07:17,710 --> 00:07:20,680
+Strings also provide functions such as to uppercase and
+
+109
+00:07:20,680 --> 00:07:25,140
+to lowercase, these will change the case of each character in the string.
+
+110
+00:07:25,140 --> 00:07:27,760
+Again, keep in mind, it's not changing the string,
+
+111
+00:07:27,760 --> 00:07:31,160
+it's returning a new string that's been converted.
+
+112
+00:07:31,160 --> 00:07:35,580
+For instance, in this case, to uppercase will return this string.
+
+113
+00:07:35,580 --> 00:07:36,990
+It doesn't change greeting.
+
+114
+00:07:36,990 --> 00:07:40,900
+It's just a new string with the same characters, but now all uppercase.
+
+115
+00:07:40,900 --> 00:07:45,510
+Last, strings have a property called length, which will return the length
+
+116
+00:07:45,510 --> 00:07:49,930
+of the string of number of characters in the string, as we can see down here.
+
+117
+00:07:49,930 --> 00:07:51,550
+So far we've seen numbers and
+
+118
+00:07:51,550 --> 00:07:55,910
+we've seen strings, let's see the other three primitive variable types.
+
+119
+00:07:55,910 --> 00:08:00,570
+Booleans are logical values that can only be true and false.
+
+120
+00:08:00,570 --> 00:08:02,770
+Just like in other programming languages.
+
+121
+00:08:02,770 --> 00:08:07,950
+Now, one feature of JavaScript is that we can use any value as a boolean, for
+
+122
+00:08:07,950 --> 00:08:11,590
+instance when doing conditional operators.
+
+123
+00:08:11,590 --> 00:08:14,060
+Only true is true, and only false is false.
+
+124
+00:08:15,070 --> 00:08:19,770
+But in JavaScript there's a notion of truthy and falsy values.
+
+125
+00:08:19,770 --> 00:08:25,280
+It's probably easier just to remember the false-y ones, which are things like null,
+
+126
+00:08:25,280 --> 00:08:29,450
+undefined, 0, NaN, or an empty string.
+
+127
+00:08:29,450 --> 00:08:32,540
+These are not false because they're not booleans, but
+
+128
+00:08:32,540 --> 00:08:36,560
+they're rather treated as false in conditional operators.
+
+129
+00:08:36,560 --> 00:08:41,620
+Just about everything else is a truth-y value, for instance, the string cow.
+
+130
+00:08:41,620 --> 00:08:46,433
+Even the string, false, is a truthy value because it's a string,
+
+131
+00:08:46,433 --> 00:08:51,760
+it's a non empty string, numbers like 5, even negative numbers, etc.
+
+132
+00:08:51,760 --> 00:08:54,410
+The last two variable types are null and undefined.
+
+133
+00:08:55,410 --> 00:08:59,459
+Null is just used to represent no value or an empty value.
+
+134
+00:09:00,990 --> 00:09:05,460
+In this case, we see that null is part of the declaration of this variable.
+
+135
+00:09:07,760 --> 00:09:12,690
+On the other hand, undefined means it doesn't have any value assigned to it yet.
+
+136
+00:09:13,770 --> 00:09:15,650
+Here, we can see that for salary,
+
+137
+00:09:15,650 --> 00:09:20,620
+there's no value assigned in its initialization or declaration.
+
+138
+00:09:20,620 --> 00:09:25,000
+So that when we go and try to print it, this is a valid variable but
+
+139
+00:09:25,000 --> 00:09:30,080
+it doesn't have a value yet and it would be considered undefined.
+
+140
+00:09:31,740 --> 00:09:35,870
+To summarize, we've started to look at JavaScript variables and there are five
+
+141
+00:09:35,870 --> 00:09:40,990
+primitive variable types, number, string, boolean, null and undefined.
+
+142
+00:09:42,110 --> 00:09:45,966
+In the next few lessons, we'll start looking at how we use these variables in
+
+143
+00:09:45,966 --> 00:09:48,058
+order to write our JavaScript programs.
+

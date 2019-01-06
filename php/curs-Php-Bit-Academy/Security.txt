@@ -1,0 +1,9 @@
+1) Generez un cad atunci cand generez formularul
+2) Cadul se pune intr-un camp de tip input hidden
+3) Salveze cadul in baza de date
+$) Cand procesez formularul trebuie sa 
+	a) Verific codul formularuli in baza de date
+	b) Daca il gasesc 
+		1)procesez formularul
+		2)Sterg codul
+	c) Daca nu il gasesc -> DIE()

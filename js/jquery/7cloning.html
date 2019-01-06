@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+        <button type="button" id="add-line">Add new line</button>
+        <div id="container">
+          <div class="user-entry">
+            <label>Email:</label>
+            <input type="email" />
+            <label>Password:</label>
+            <input type="password" />
+          </div>
+        </div>
+ <script src= "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+ <script>
+      $(function (){
+
+        $userForm = $('.user-entry').clone();
+        $userForm.css('display', 'none');
+        $('#add-line').click(function() {
+            var newuserForm = $userForm.clone();
+            $('#container').append($newuserForm);
+            newuserForm.show(750);
+        });
+      });
+ </script>
+</body>
+</html>

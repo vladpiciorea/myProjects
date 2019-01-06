@@ -1,0 +1,740 @@
+0
+00:00:04,864 --> 00:00:09,499
+Up until now, we've been looking at the core JavaScript features, variables,
+
+1
+00:00:09,499 --> 00:00:12,970
+arrays, objects, and conditional statements.
+
+2
+00:00:12,970 --> 00:00:16,010
+The last sort of core feature of the language that we need to look at
+
+3
+00:00:16,010 --> 00:00:20,340
+before we start seeing how to apply it to web development is functions.
+
+4
+00:00:20,340 --> 00:00:21,870
+Like most other programming languages,
+
+5
+00:00:21,870 --> 00:00:28,000
+JavaScript supports the definition of functions here using the keyword function,
+
+6
+00:00:28,000 --> 00:00:32,870
+followed by the name of the function, and in the parameter list.
+
+7
+00:00:32,870 --> 00:00:38,840
+Now remember in JavaScript, variables are declared using simply the keyword, var.
+
+8
+00:00:38,840 --> 00:00:42,050
+We don't need to declare their type when we declare them, so
+
+9
+00:00:42,050 --> 00:00:44,550
+we just have the name of the variable.
+
+10
+00:00:44,550 --> 00:00:47,762
+The body of the function is delineated with the curly braces,
+
+11
+00:00:47,762 --> 00:00:50,561
+and then we have the code itself within the function.
+
+12
+00:00:50,561 --> 00:00:56,010
+In this case, we're computing the factorial of n using a for loop.
+
+13
+00:00:56,010 --> 00:01:00,320
+We can return a value from the function using the return keyword.
+
+14
+00:01:00,320 --> 00:01:02,790
+Here, we're returning the product that we've computed,
+
+15
+00:01:02,790 --> 00:01:05,640
+which holds the factorial value.
+
+16
+00:01:05,640 --> 00:01:08,850
+In the code that's using this function, we've got some variable x.
+
+17
+00:01:08,850 --> 00:01:13,424
+We pass x to the factorial function that returns a variable that will store in f.
+
+18
+00:01:13,424 --> 00:01:16,060
+And we can print the value of f.
+
+19
+00:01:17,430 --> 00:01:19,950
+Now we saw arrays in a previous lesson, and
+
+20
+00:01:19,950 --> 00:01:24,430
+one of the nice things about JavaScript is the ability to apply a function
+
+21
+00:01:24,430 --> 00:01:29,660
+to each element in the array without having to write our own loops around it.
+
+22
+00:01:29,660 --> 00:01:33,969
+Here we have an example, where I have an array called nums which has four numbers,
+
+23
+00:01:33,969 --> 00:01:36,102
+and then I have a function called print.
+
+24
+00:01:36,102 --> 00:01:41,775
+Print takes a number or a variable n, and just writes it to the the console.
+
+25
+00:01:41,775 --> 00:01:46,287
+I can use the nums for each function and
+
+26
+00:01:46,287 --> 00:01:51,222
+pass the name of the function to forEach,
+
+27
+00:01:51,222 --> 00:01:56,900
+that is nums is my variable from up here.
+
+28
+00:01:56,900 --> 00:02:03,230
+That variable, which is an array, has an associated function called forEach.
+
+29
+00:02:03,230 --> 00:02:07,260
+And then, what I pass is not a value,
+
+30
+00:02:08,280 --> 00:02:12,990
+as in an argument to a function, but rather than name of this function, and
+
+31
+00:02:12,990 --> 00:02:17,150
+what this will do is apply this function, which is, print.
+
+32
+00:02:17,150 --> 00:02:20,448
+To each element in the array thereby printing or
+
+33
+00:02:20,448 --> 00:02:24,290
+writing to the console's log each element.
+
+34
+00:02:24,290 --> 00:02:25,280
+Here's another example.
+
+35
+00:02:25,280 --> 00:02:27,510
+I've created a function called isEven.
+
+36
+00:02:27,510 --> 00:02:31,310
+It takes a value n and returns true if n mod 2 equals 0,
+
+37
+00:02:31,310 --> 00:02:35,490
+meaning when I divide it, the remainder by 2 the remainder is 0.
+
+38
+00:02:35,490 --> 00:02:39,449
+That means it's even. I can use and erase every function to
+
+39
+00:02:39,449 --> 00:02:46,770
+determine if isEven returns true for every element in that array.
+
+40
+00:02:46,770 --> 00:02:50,160
+That is nums again is the name of my array.
+
+41
+00:02:50,160 --> 00:02:55,009
+Arrays have an associated function called every that will call
+
+42
+00:02:55,009 --> 00:02:59,490
+this function, up here, on every element of the array and
+
+43
+00:02:59,490 --> 00:03:05,092
+return true, if this function returns true for every element.
+
+44
+00:03:05,092 --> 00:03:09,160
+In this case, because the numbers are all even, isEven will return true for
+
+45
+00:03:09,160 --> 00:03:13,370
+each of those four elements, therefore every will return true.
+
+46
+00:03:13,370 --> 00:03:19,020
+If I had an odd number in my array, isEven would return false for that element.
+
+47
+00:03:19,020 --> 00:03:22,410
+So every would return false, because this is not true for every element.
+
+48
+00:03:23,640 --> 00:03:27,840
+There's an associated function called some, S-O-M-E,
+
+49
+00:03:27,840 --> 00:03:33,410
+that will return true if this is true for any or for some elements in the array.
+
+50
+00:03:33,410 --> 00:03:36,590
+Last, in the same way that forEach
+
+51
+00:03:36,590 --> 00:03:39,400
+will apply the function to each element in the array.
+
+52
+00:03:39,400 --> 00:03:44,310
+I might want to apply that function but then do something with the return value.
+
+53
+00:03:45,690 --> 00:03:48,930
+So here I have a function called, square, which will square the number,
+
+54
+00:03:48,930 --> 00:03:50,700
+multiply it by itself.
+
+55
+00:03:50,700 --> 00:03:55,478
+I'm going to, on my array, invoke the map function.
+
+56
+00:03:55,478 --> 00:04:01,290
+So arrays have a function called map that takes another function and
+
+57
+00:04:01,290 --> 00:04:03,650
+applies it to every element of the array.
+
+58
+00:04:04,830 --> 00:04:09,120
+But then returns a new array which holds the values
+
+59
+00:04:09,120 --> 00:04:13,420
+that are the results of applying that function to each element of the array.
+
+60
+00:04:14,740 --> 00:04:16,300
+In this case,
+
+61
+00:04:16,300 --> 00:04:22,730
+squares would be this array here to hold the squares of the values up here.
+
+62
+00:04:22,730 --> 00:04:26,800
+One of the complicated features of any programming language is knowing what
+
+63
+00:04:26,800 --> 00:04:31,950
+will happen to a value when you pass it as an argument to some function.
+
+64
+00:04:31,950 --> 00:04:36,250
+If that function tries to change the argument, what will happen to it?
+
+65
+00:04:36,250 --> 00:04:40,620
+In JavaScript, primitive arguments, numbers, boolean, strings, etc,
+
+66
+00:04:40,620 --> 00:04:45,130
+are passed by value, that means that the function cannot change them.
+
+67
+00:04:46,420 --> 00:04:50,710
+Here I have a function called try to change which takes an input x and
+
+68
+00:04:50,710 --> 00:04:52,850
+it sets x to four.
+
+69
+00:04:52,850 --> 00:04:56,090
+Outside the function I declare a variable y, set it to 11, and
+
+70
+00:04:56,090 --> 00:05:00,060
+I pass y to the tryToChange function.
+
+71
+00:05:00,060 --> 00:05:03,030
+As you know at this point, x holds the value of y.
+
+72
+00:05:03,030 --> 00:05:06,602
+And when it tries to change it to four, the question is,
+
+73
+00:05:06,602 --> 00:05:08,810
+does it actually change y to four?
+
+74
+00:05:08,810 --> 00:05:10,466
+And the answer is no,
+
+75
+00:05:10,466 --> 00:05:16,270
+y does not change because y is a primitive variable, it's a number.
+
+76
+00:05:16,270 --> 00:05:22,000
+It's passed by value meaning that the value is set to x.
+
+77
+00:05:22,000 --> 00:05:24,350
+But it does not change when I change it within the function.
+
+78
+00:05:25,490 --> 00:05:29,740
+On the other hand, when a variable is an object, those are passed by reference.
+
+79
+00:05:29,740 --> 00:05:33,640
+And that means that if they're changed in the function the object itself
+
+80
+00:05:33,640 --> 00:05:34,380
+does get changed.
+
+81
+00:05:35,480 --> 00:05:38,020
+Now I have a function called changeMe,
+
+82
+00:05:38,020 --> 00:05:41,600
+which is going to increment the age property of that object.
+
+83
+00:05:41,600 --> 00:05:46,070
+I create a variable outside of the function called p.
+
+84
+00:05:46,070 --> 00:05:47,672
+It has an age property which is set to 30.
+
+85
+00:05:47,672 --> 00:05:55,730
+When I pass p to changeMe, object becomes a reference to p if you will.
+
+86
+00:05:55,730 --> 00:06:01,050
+And when I do obj.age++, incrementing the age property of the object,
+
+87
+00:06:01,050 --> 00:06:05,490
+I'm actually incrementing the age property of p.
+
+88
+00:06:05,490 --> 00:06:09,030
+So that when I print p.age, now it's 31.
+
+89
+00:06:09,030 --> 00:06:14,270
+JavaScript functions are objects, that means that the functions
+
+90
+00:06:14,270 --> 00:06:17,659
+can take advantage of the benefits of an object, such as having properties.
+
+91
+00:06:18,710 --> 00:06:20,810
+They're not shown in this lesson.
+
+92
+00:06:20,810 --> 00:06:25,290
+A function has for instance, a property called arguments that it can use to access
+
+93
+00:06:25,290 --> 00:06:28,530
+all of the arguments that are passed to it as an array.
+
+94
+00:06:28,530 --> 00:06:30,810
+But since JavaScript functions are objects,
+
+95
+00:06:30,810 --> 00:06:35,590
+that means we can have a variable that holds that function.
+
+96
+00:06:35,590 --> 00:06:38,560
+For instance in this example, I have a variable called add.
+
+97
+00:06:39,940 --> 00:06:42,720
+And it's value is not a primitive value and
+
+98
+00:06:42,720 --> 00:06:47,050
+it's not an object using the notation we saw before, but
+
+99
+00:06:47,050 --> 00:06:53,220
+rather it's a function which takes two inputs, a and b, and returns their sum.
+
+100
+00:06:53,220 --> 00:06:55,760
+That means I can invoke this function
+
+101
+00:06:55,760 --> 00:07:00,620
+using the name of the variable that holds it, in this case add.
+
+102
+00:07:00,620 --> 00:07:03,800
+And I can invoke it using three and five, for instance.
+
+103
+00:07:03,800 --> 00:07:06,350
+There are a lot of benefits of that feature, and
+
+104
+00:07:06,350 --> 00:07:11,100
+one of them is that I can have a function as part of an object.
+
+105
+00:07:11,100 --> 00:07:15,480
+That is, I can have a function be a property of some other object.
+
+106
+00:07:15,480 --> 00:07:20,190
+In this case, I have a variable called johnDoe, which is an object.
+
+107
+00:07:20,190 --> 00:07:24,640
+And one of its properties is greeting, which is a function.
+
+108
+00:07:24,640 --> 00:07:27,700
+When this function is invoked, it'll just return the string, Hello,
+
+109
+00:07:27,700 --> 00:07:28,500
+Nice Meeting You.
+
+110
+00:07:29,710 --> 00:07:33,409
+So that when I invoke it, using the name of the object and
+
+111
+00:07:33,409 --> 00:07:38,820
+the name of it's property as a function, it'll invoke this method,
+
+112
+00:07:38,820 --> 00:07:43,310
+it'll return that string, and that's what would get logged to the console.
+
+113
+00:07:43,310 --> 00:07:48,080
+Now we're gonna get too much into JavaScript object oriented programming.
+
+114
+00:07:48,080 --> 00:07:51,260
+But it's worth pointing out that all objects in JavaScript
+
+115
+00:07:51,260 --> 00:07:53,540
+have what's known as a prototype.
+
+116
+00:07:53,540 --> 00:07:57,990
+The prototype is just the basic set of properties
+
+117
+00:07:57,990 --> 00:08:01,340
+that it has from which it can inherit.
+
+118
+00:08:01,340 --> 00:08:09,690
+This prototype is itself a property named __proto___, as you can see here.
+
+119
+00:08:09,690 --> 00:08:14,955
+That proto property is also an object, it has a proto property and so on,
+
+120
+00:08:14,955 --> 00:08:21,170
+and there is a root of all the objects, a root prototype Object.prototype.
+
+121
+00:08:21,170 --> 00:08:24,300
+We can use this in order to create objects
+
+122
+00:08:24,300 --> 00:08:28,940
+that inherit the properties of other objects and so on.
+
+123
+00:08:28,940 --> 00:08:31,730
+In this example, we're going to see a function that's going to be
+
+124
+00:08:31,730 --> 00:08:34,900
+used as a prototype for creating other objects.
+
+125
+00:08:34,900 --> 00:08:37,630
+We can think of this as a class definition,
+
+126
+00:08:37,630 --> 00:08:39,900
+though it's not exactly the same.
+
+127
+00:08:39,900 --> 00:08:44,730
+For instance, I have a function, we've seen this before, this notation,
+
+128
+00:08:44,730 --> 00:08:48,350
+function, the name of the function, and then the list of its parameters.
+
+129
+00:08:49,430 --> 00:08:50,750
+But you see within the function,
+
+130
+00:08:51,940 --> 00:08:56,630
+we're setting the properties of an object called, this.
+
+131
+00:08:56,630 --> 00:08:59,420
+This refers to this object, this current object.
+
+132
+00:08:59,420 --> 00:09:04,295
+And here, I'm setting the object's name, age and greeting.
+
+133
+00:09:04,295 --> 00:09:11,284
+Down here, I can use this prototype to create a new object using the new keyword.
+
+134
+00:09:11,284 --> 00:09:14,920
+And if you've seen programming languages like, Java, C++,
+
+135
+00:09:14,920 --> 00:09:16,915
+etc, you're familiar with this.
+
+136
+00:09:16,915 --> 00:09:21,629
+Where here, person is the name of the prototypes or class if you will, but
+
+137
+00:09:21,629 --> 00:09:23,086
+not exactly the same.
+
+138
+00:09:23,086 --> 00:09:28,104
+But we'll consider that the prototype, it will invoke that function,
+
+139
+00:09:28,104 --> 00:09:31,322
+it'll pass John Doe and 32, to name an age.
+
+140
+00:09:31,322 --> 00:09:36,275
+But what will return is an object where its name age and
+
+141
+00:09:36,275 --> 00:09:39,700
+greeting properties have been set.
+
+142
+00:09:40,710 --> 00:09:46,060
+So using the keyword new, I can invoke that function and then what comes back
+
+143
+00:09:46,060 --> 00:09:51,350
+is a new object, and I can set John Doe to hold that object.
+
+144
+00:09:51,350 --> 00:09:56,283
+Now when I invoke johnDoe.greeting, it'll invoke this method.
+
+145
+00:09:56,283 --> 00:10:00,694
+And as in many other programming languages, when the method refers to this
+
+146
+00:10:00,694 --> 00:10:05,747
+.name, it means this object's name, this object's name had been set to John Doe.
+
+147
+00:10:05,747 --> 00:10:09,590
+And that's why it prints, hello, my name is John Doe.
+
+148
+00:10:09,590 --> 00:10:15,230
+I can then use that prototype to create another object, this time Jane Doe.
+
+149
+00:10:15,230 --> 00:10:19,870
+Jane Doe has her own name of course, in that separate object.
+
+150
+00:10:19,870 --> 00:10:24,070
+And so when it prints the greeting, it'll print a return, hello,
+
+151
+00:10:24,070 --> 00:10:25,550
+my name is Jane Doe.
+
+152
+00:10:25,550 --> 00:10:29,400
+We can use prototypes in the same way that we might use inheritance in
+
+153
+00:10:29,400 --> 00:10:33,700
+object oriented programming languages like Java and C++.
+
+154
+00:10:33,700 --> 00:10:37,320
+Here, we'll create another prototype called students and
+
+155
+00:10:37,320 --> 00:10:42,140
+we set its prototype to a person from the previous slide.
+
+156
+00:10:43,450 --> 00:10:47,390
+So in this case, we can think of student extending person
+
+157
+00:10:47,390 --> 00:10:51,520
+using person as its prototype or inheriting all of its properties.
+
+158
+00:10:51,520 --> 00:10:55,780
+But student can have its own properties for instance, school.
+
+159
+00:10:55,780 --> 00:10:58,222
+When I create a variable called Sarah Brown,
+
+160
+00:10:58,222 --> 00:11:01,740
+we're gonna use the student prototype here.
+
+161
+00:11:01,740 --> 00:11:06,302
+It'll pass, these three arguments to this function, but
+
+162
+00:11:06,302 --> 00:11:10,236
+name and age, are passed to the person prototype.
+
+163
+00:11:10,236 --> 00:11:13,642
+The prototype of this student, is that person object,
+
+164
+00:11:13,642 --> 00:11:17,916
+of course it's gonna set the school, it's inherited, if you will,
+
+165
+00:11:17,916 --> 00:11:21,989
+the properties of the person, including the greeting function.
+
+166
+00:11:21,989 --> 00:11:26,536
+And we can also use the keyword instanceof to see,
+
+167
+00:11:26,536 --> 00:11:33,270
+does this variable extend, or if you will, this particular prototype.
+
+168
+00:11:33,270 --> 00:11:36,510
+Sarah Brown is a student, a student is a person.
+
+169
+00:11:36,510 --> 00:11:41,240
+Last, in the same way that we could add properties to a object,
+
+170
+00:11:41,240 --> 00:11:44,010
+we can also add properties to a prototype.
+
+171
+00:11:44,010 --> 00:11:48,830
+And we can change the underlying prototype implementation in our code.
+
+172
+00:11:48,830 --> 00:11:54,120
+Here we just have a person again, person has a name, age and occupation,
+
+173
+00:11:54,120 --> 00:11:58,460
+but to its prototype, we can add the property planet,
+
+174
+00:11:58,460 --> 00:12:02,440
+and we can also add the property introduction, which is a function.
+
+175
+00:12:02,440 --> 00:12:08,740
+So now when I create a person using that prototype, it's not simply what's up here
+
+176
+00:12:09,850 --> 00:12:15,659
+but also this object now has a planet property because we changed the prototype.
+
+177
+00:12:16,740 --> 00:12:21,640
+And it has an introduction function again because we changed the prototype.
+
+178
+00:12:21,640 --> 00:12:26,220
+To summarize, in this lesson, we've been talking about JavaScript functions.
+
+179
+00:12:26,220 --> 00:12:28,150
+Like many other programming languages,
+
+180
+00:12:28,150 --> 00:12:31,440
+JavaScript lets the programmer define functions.
+
+181
+00:12:31,440 --> 00:12:36,130
+But in JavaScript, functions are objects and functions can be used in objects.
+
+182
+00:12:36,130 --> 00:12:38,450
+Functions can be used to create objects.
+
+183
+00:12:38,450 --> 00:12:42,103
+And we can use function prototypes to create blueprints for
+
+184
+00:12:42,103 --> 00:12:44,155
+creating other objects as well.
+

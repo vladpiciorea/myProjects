@@ -1,0 +1,91 @@
+php artisan make:controller PagesController //Creaza controller
+$ php artisan make:controller PostsController --resource // creaza controllercu functiile
+// index
+    // create
+    // store
+    // edit
+    // update
+    // show
+    // destroy
+
+php artisan make:model Post //Creaza model
+npm install // instaleaza npm
+npm run dev // recompileaza sas astefl putem schimba culorile
+npm run watch // ruleaza mereu si premite sa vedem modificarile
+php artisan migrate // creaza tabelul pe care l-am defint noi in database migrations pt a nu avea erori se introduce libraria use Illuminate\Database\Migrations\
+$ php artisan tinker // utilizare tinker o modalitate usora de introducere date
+Exemplu introducere date
+$ php artisan tinker
+Psy Shell v0.8.18 (PHP 7.2.2 — cli) by Justin Hileman
+>>> App\Post::count()
+=> 0
+>>> $post = new App\Post();
+=> App\Post {#756}
+>>> $post->title = 'Post One';
+=> "Post One"
+>>> $post->body = 'This is a post body';
+=> "This is a post body"
+>>> $post->save();
+=> true
+>>>
+
+$ php artisan rout:list // arata rutele pe care le avem  
+Route::resource('posts', 'PostsController'); //pentru a crea toate rutele de care avem nevoie
+
+$ php artisan make:auth //creaza autentificare
+$ php artisan make:migration add_user_id_to_posts //adauga la prima rulare un fisier in database/migration unde putem ce vrem sa se intample
+//se ruleaza dupaia php artisan migrate pt a adauga coloana
+$ php artisan roll back // stege coloana
+
+$ php artisan storage:link //creaza folderul storage in pubil care va tine imaginile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="{{ app()->getLocale() }}">
+    <head>
+        <meta charset="utf-8">yes
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
+        <title>{{config('app.name', 'LSAPP')}}</title>
+    
+    </head>
+    <body>
+        @include('inc.navbar')
+        <div class="container">
+            @include('inc.messages')
+            @yield('content')
+        </div>
+    <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace( 'article-ckeditor' );
+    </script>
+    </body>
+</html>

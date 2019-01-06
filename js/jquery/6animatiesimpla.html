@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <style>
+        .hidden { display: none; }
+    </style>
+    <form>
+        <div>
+            <label>Name:</label>
+            <input type="text" />
+        </div>
+        <button type="button" id="show-additional-information">
+            Show additional information
+        </button>
+        <div id="additional-information" class="hidden">
+            <label>Additional information:</label>
+            <input type="text" />
+        </div>
+    </form>
+ <script src= "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+ <script>
+      $(function (){
+            $('#show-additional-information').click(function() {
+          // $('#additional-information').toggle(750);
+          // $('#additional-information').hide(750);
+          //$('#additional-information').show(750);
+          //$('#additional-information').fadeIn(750);
+          //$('#additional-information').fadeOut(750);
+          //$('#additional-information').fadeToggle(750);
+          //$('#additional-information').fadeTo(750,50);
+          //$('#additional-information').slideDown(750);
+          //$('#additional-information').slideUp(750);
+          $('#additional-information').slideToggle(750);
+         });
+      });
+ </script>
+</body>
+</html>
